@@ -12,7 +12,7 @@
 
     <!-- AOS -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/aos.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/aos.css" /> -->
 
 
     <script type="application/ld+json">
@@ -53,134 +53,226 @@
         rel='stylesheet' type='text/css'>
 
     <!-- Add custom CSS here -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet" />
+
+    <style>
+        section {
+            position: relative;
+            top: 0!important;
+            margin-top: 0!important;
+            width: 100vw;
+            height: 100%;
+            background: #3586ff;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        section .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100px;
+            width: 100vw;
+            background: url(wave.png);
+            opacity: 0.5;
+            background-size: 1000px 100px;
+        }
+
+        section .wave.wave1 {
+            animation: animate 30s linear infinite;
+            opacity: 1;
+            z-index: 1000;
+            animation-delay: 0s;
+            bottom: 0;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+
+        section .wave.wave2 {
+            animation: animate2 15s linear infinite;
+            opacity: 0.5;
+            z-index: 999;
+            animation-delay: -5s;
+            bottom: 10px;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: -1000px;
+            }
+        }
+
+        section .wave.wave3 {
+            animation: animate3 30s linear infinite;
+            opacity: 0.7;
+            z-index: 998;
+            animation-delay: -2ss;
+            bottom: 15px;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+
+        }
+
+        section .wave.wave4 {
+            animation: animate4 15s linear infinite;
+            opacity: 0.7;
+            z-index: 1000;
+            animation-delay: -5s;
+            bottom: 20px;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+
+        }
+    </style>
 
 </head>
 
 <body>
+    <div>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
 
-                </div>
-                <div class="col-md-10">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" style="margin-top: 30px!important;" data-toggle="collapse"
-                            data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            <img class="img-responsive d-sm-none d-block" src="img/logo.png" alt="">
-                            <!-- <span
-                                class="navbar-brand-custom"
-                                style="position: absolute;left: 9%;top: 53%; display: none;">
-                                Digital Minds
-                            </span> -->
-                        </a>
                     </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav navbar-nav-customised" style="margin-left: 40%;">
-                            <li><a href="#main" class="smoothScroll"><br>Home</a>
-                            </li>
-                            <li><a href="#about" class="smoothScroll"><br>About</a>
-                            </li>
-                            <li><a href="#services" class="smoothScroll"><br>Services</a>
-                            </li>
-                            <li><a href="#products" class="smoothScroll"><br>Products</a>
-                            </li>
-                            <li><a href="#team" class="smoothScroll"><br>Team</a>
-                            </li>
-                            <li><a href="#contact" class="smoothScroll"><br>Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <div class="col-md-1">
-
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div id="main" class="intro-header" name="main">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-lg-8">
-                    <div class="intro-message">
-                        <h3
-                        data-aos="fade-up-left" 
-                                            data-aos-delay="50" 
-                                            data-aos-once="false"
-                        >Embrancing the Digital World</h3>
-                        <br>
-                        <br>
-                        <!-- <hr class="intro-divider"> -->
-
-                        <div class="row">
-                            <div class="col-md-6" style="text-align: justify;">
-                                <h4
-                                    data-aos="fade-up-left" 
-                                    data-aos-delay="50" 
-                                    data-aos-once="false"
-                                >Mission Statement</h4>
-                                <p
-                                    data-aos="fade-up-left" 
-                                    data-aos-delay="50" 
-                                    data-aos-once="false"
-                                >
-                                    Promoting passion and Skills through building a strong technology business empire in
-                                    the 21st century.
-                                </p>
-                                <h4
-                                    data-aos="zoom-out" 
-                                    data-aos-delay="50" 
-                                    data-aos-once="false"
-                                >Vision Statement</h4>
-                                <p
-                                    data-aos="zoom-in" 
-                                    data-aos-delay="50" 
-                                    data-aos-once="false"
-                                >
-                                    Connecting the world with the purpose of having freedom to belong anywhere and
-                                    having services at your convenience.
-                                </p>
-                            </div>
-                            <div class="col-md-6">
-
-                                <img class="img-responsive" src="img/bannerlogo.png" alt="">
-                            </div>
+                    <div class="col-md-10">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" style="margin-top: 30px!important;"
+                                data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img class="img-responsive d-sm-none d-block" src="img/logo.png" alt="">
+                                <!-- <span
+                            class="navbar-brand-custom"
+                            style="position: absolute;left: 9%;top: 53%; display: none;">
+                            Digital Minds
+                        </span> -->
+                            </a>
                         </div>
 
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav navbar-nav-customised" style="margin-left: 40%;">
+                                <li><a href="#main" class="smoothScroll"><br>Home</a>
+                                </li>
+                                <li><a href="#about" class="smoothScroll"><br>About</a>
+                                </li>
+                                <li><a href="#services" class="smoothScroll"><br>Services</a>
+                                </li>
+                                <li><a href="#products" class="smoothScroll"><br>Products</a>
+                                </li>
+                                <li><a href="#team" class="smoothScroll"><br>Team</a>
+                                </li>
+                                <li><a href="#contact" class="smoothScroll"><br>Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-                    <div class="col-md-2">
-                    </div>
-                    <div id="down" style="position: absolute;left: 90%;top: 90%;">
-                        <a href="#contact">
-                            <img class="img-responsive" src="img/arrow.png" alt="">
-                        </a>
+                    <div class="col-md-1">
+
                     </div>
                 </div>
             </div>
+            <!-- /.container -->
+        </nav>
 
+        <section>
+        <div id="main" class="intro-header" style="position: relative!important; top: 0;" name="main">
+            <div class="mx-0 mt-0">
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                    <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="intro-message">
+                                <h3 data-aos="fade-up-left" data-aos-delay="50" data-aos-once="false">Embrancing the
+                                    Digital
+                                    World</h3>
+                                <br>
+                                <br>
+                                <!-- <hr class="intro-divider"> -->
+
+                                <div class="row">
+                                    <div class="col-md-6" style="text-align: justify;">
+                                        <h4 data-aos="fade-up-left" data-aos-delay="50" data-aos-once="false">Mission
+                                            Statement</h4>
+                                        <p data-aos="fade-up-left" data-aos-delay="50" data-aos-once="false">
+                                            Promoting passion and Skills through building a strong technology business
+                                            empire in
+                                            the 21st century.
+                                        </p>
+                                        <h4 data-aos="zoom-out" data-aos-delay="50" data-aos-once="false">Vision
+                                            Statement
+                                        </h4>
+                                        <p data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                                            Connecting the world with the purpose of having freedom to belong anywhere
+                                            and
+                                            having services at your convenience.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <img class="img-responsive" src="img/bannerlogo.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                            <div id="down" style="position: absolute;left: 90%;top: 90%;">
+                                <a href="#contact">
+                                    <img class="img-responsive" src="img/arrow.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.intro-header -->
+        </section>
         </div>
-        <!-- /.container -->
 
-    </div>
-    <!-- /.intro-header -->
 
     <div class="content-section-a">
 
@@ -189,30 +281,28 @@
             <div id="about" class="row" name="about">
                 <div class="col-lg-12 col-sm-6">
                     <div class="clearfix"></div>
-                    <h1 class="section-heading text-primary"><i class="fa fa-home" style="font-size: 40px;color: #428bca;"></i> About
+                    <h1 class="section-heading text-primary"><i class="fa fa-home"
+                            style="font-size: 40px;color: #428bca;"></i> About
                         Us</h2>
 
-                    <p class="lead"
-                        data-aos="flip-right" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
-                        DigitalMinds is an initiative that is aimed at providing information technology (IT) services
-                        around the world. It was started with the purpose of building and enhancing cores in software
-                        development through writing efficient algorithms that can solve real world problems and deliver
-                        software products inform of web systems, sites and mobile applications to different communities,
+                        <p class="lead" data-aos="flip-right" data-aos-delay="50" data-aos-once="false">
+                            DigitalMinds is an initiative that is aimed at providing information technology (IT)
+                            services
+                            around the world. It was started with the purpose of building and enhancing cores in
+                            software
+                            development through writing efficient algorithms that can solve real world problems and
+                            deliver
+                            software products inform of web systems, sites and mobile applications to different
+                            communities,
 
-                    </p>
-                    <p class="lead"
-                        data-aos="flip-right" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >Provide Networking services through creating and configuring best networks for
-                        organizations,
-                        homes and other office companies following recommended cisco network standards, provide web
-                        services like website designing, maintenance and hosting for different companies and also
-                        provide other basic IT services like computer trouble shooting and maintenance to different
-                        clients and schools. .</p>
+                        </p>
+                        <p class="lead" data-aos="flip-right" data-aos-delay="50" data-aos-once="false">Provide
+                            Networking services through creating and configuring best networks for
+                            organizations,
+                            homes and other office companies following recommended cisco network standards, provide web
+                            services like website designing, maintenance and hosting for different companies and also
+                            provide other basic IT services like computer trouble shooting and maintenance to different
+                            clients and schools. .</p>
                 </div>
                 <!-- <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/ipad.png" alt="">
@@ -248,43 +338,31 @@
                     <div class="clearfix"></div>
                     <h1 class="section-heading text-primary">
                         <i class="fa fa-cogs" style="font-size: 40px;color: #428bca;"></i> Our Services
-                    </h2>
-                    <p class="lead"
-                        data-aos="fade-up-left" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
-                        We develop software programs inform of mobile applications, Web systems and do computer
-                        troubleshooting and mantainance
-                        <br>
-                        Provide Networking services ranging from servers, switches and router configuration to CCTV
-                        camera installations to organizations, companies and homes.
+                        </h2>
+                        <p class="lead" data-aos="fade-up-left" data-aos-delay="50" data-aos-once="false">
+                            We develop software programs inform of mobile applications, Web systems and do computer
+                            troubleshooting and mantainance
+                            <br>
+                            Provide Networking services ranging from servers, switches and router configuration to CCTV
+                            camera installations to organizations, companies and homes.
 
-                    </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul 
-                                data-aos="zoom-in" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                                <li>Computer Networks and Security sessions</li>
-                                <li>Computer Programming and Troubleshooting</li>
-                                <li>Mobile App designing and development</li>
-                            </ul>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                                    <li>Computer Networks and Security sessions</li>
+                                    <li>Computer Programming and Troubleshooting</li>
+                                    <li>Mobile App designing and development</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul data-aos="zoom-out" data-aos-delay="50" data-aos-once="false">
+                                    <li>Website Designing</li>
+                                    <li>Website maintenance</li>
+                                    <li>Website Hosting</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul
-                                data-aos="zoom-out" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                                <li>Website Designing</li>
-                                <li>Website maintenance</li>
-                                <li>Website Hosting</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -301,106 +379,93 @@
             <div id="products" class="row" name="products">
                 <div class="col-lg-12">
                     <div class="clearfix"></div>
-                    <h1 class="section-heading text-primary"
-                        data-aos="flip-left" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
+                    <h1 class="section-heading text-primary" data-aos="flip-left" data-aos-delay="50"
+                        data-aos-once="false">
                         <i class="fa fa-fa fa-laptop" style="font-size: 40px;color: #428bca;"></i>
-                            Products
-                    </h2>
-                    <div class="row mt-4">
-                        <div class="col-md-12">
-                            <img src="img/bashaamwe_logo2.png" class="pull-left"
-                                data-aos="zoom-out" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                            <p class="lead"
-                                data-aos="zoom-in" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                                An open informational platform that helps gather information from interested
-                                individuals, parties and groups to report about issues that affect their communities.
-                            </p>
-                            <p class="lead"
-                                data-aos="zoom-in" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                                These issues can be about keeping our environment clean through reporting open gabbage
-                                disposing in towns, neighbourhood homesteads and other open places to the responsible
-                                municipality gabbage collectors. Issues like broken water pipes, bad roads, broken
-                                bridges and many others can be reported using this platform to the responsible organs.
-                            </p>
+                        Products
+                        </h2>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <img src="img/bashaamwe_logo2.png" class="pull-left" data-aos="zoom-out"
+                                    data-aos-delay="50" data-aos-once="false">
+                                <p class="lead" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                                    An open informational platform that helps gather information from interested
+                                    individuals, parties and groups to report about issues that affect their
+                                    communities.
+                                </p>
+                                <p class="lead" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                                    These issues can be about keeping our environment clean through reporting open
+                                    gabbage
+                                    disposing in towns, neighbourhood homesteads and other open places to the
+                                    responsible
+                                    municipality gabbage collectors. Issues like broken water pipes, bad roads, broken
+                                    bridges and many others can be reported using this platform to the responsible
+                                    organs.
+                                </p>
+
+                            </div>
 
                         </div>
 
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <h1 class="section-heading text-primary"
-                                data-aos="fade-up-left" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >Tooth Clinic</h3>
-                            <p class="lead"
-                                data-aos="fade-up-right" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                                iLearn is a school monitoring system that helps district education officers
-                                carry out remote monitoring and inspections on public schools and generate
-                                reports that can be shared with the ministry of education and sports.
-                            </p>
 
-                        </div>
-                        <div class="col-md-8">
-                            <img src="img/toothclinic.png" width="90%" class="img-fluid" alt=""
-                                data-aos="zoom-out" 
-                                data-aos-delay="50" 
-                                data-aos-once="false"
-                            >
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <img src="img/sendme.jpg" width="90%" class="img-fluid" alt="" style="width: 100%;"
-                                        data-aos="zoom-out" 
-                                        data-aos-delay="50" 
-                                        data-aos-once="false"
-                                    >
-                                </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <h1 class="section-heading text-primary" data-aos="fade-up-left" data-aos-delay="50"
+                                    data-aos-once="false">Tooth Clinic</h3>
+                                    <p class="lead" data-aos="fade-up-right" data-aos-delay="50" data-aos-once="false">
+                                        Tooth Clinic is a Dental healthcare system specializing in dental 
+                                        implants & supported dentures, root canal treatment, and crowns/veneers treatments.
+                                    </p>
+
+                            </div>
+                            <div class="col-md-8">
+                                <img src="img/toothclinic.png" width="90%" class="img-fluid" alt="" data-aos="zoom-out"
+                                    data-aos-delay="50" data-aos-once="false">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    
-                                        <h1 class="section-heading text-primary" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">Sendme App</h3>
-                                        <p class="lead"
-                                            data-aos="fade-up-left" 
-                                            data-aos-delay="50" 
-                                            data-aos-once="false"
-                                        >
-                                            <a target="_blank"
-                                                href="https://play.google.com/store/apps/details?id=com.sendme">Sendme App</a> a
-                                            secure and reliable transport and delivery service application that enables
-                                            users to locate secure reliable transport service providers, i.e; BodaBodas,
-                                            Taxis and special hire vehicles. The transport service providers go through
-                                            a
-                                            vigorous selection exercise that guarantees safety and security.
-                                        </p>
-                                    
 
 
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <h1 class="section-heading text-primary" data-aos="zoom-in" data-aos-delay="50"
+                                            data-aos-once="false">Sendme App</h3>
+                                            <p class="lead" data-aos="fade-up-left" data-aos-delay="50"
+                                                data-aos-once="false">
+                                                <a target="_blank"
+                                                    href="https://play.google.com/store/apps/details?id=com.sendme">Sendme
+                                                    App</a> a
+                                                secure and reliable transport and delivery service application that
+                                                enables
+                                                users to locate secure reliable transport service providers, i.e;
+                                                BodaBodas,
+                                                Taxis and special hire vehicles. The transport service providers go
+                                                through
+                                                a
+                                                vigorous selection exercise that guarantees safety and security.
+                                            </p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="img/sendme.jpg" width="80%" class="img-fluid" alt=""
+                                            style="width: 100%;" data-aos="zoom-out" data-aos-delay="50"
+                                            data-aos-once="false">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
-                    </div>
 
                 </div>
             </div>
@@ -417,25 +482,18 @@
         <div class="container">
             <div class="section-header">
                 <h1 class="text-primary text-center" data-aos="zoom-out" data-aos-delay="50" data-aos-once="false">Team
-                </h2>
-                <p class="text-center" data-aos="fade-up-left" data-aos-delay="50" data-aos-once="false">Talent
-                    wins
-                    games, but teamwork and intelligence win championships.</p>
+                    </h2>
+                    <p class="text-center" data-aos="fade-up-left" data-aos-delay="50" data-aos-once="false">Talent
+                        wins
+                        games, but teamwork and intelligence win championships.</p>
             </div>
 
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <div class="member"
-                        data-aos="zoom-in" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
-                        <img src="img/team/nico.JPG" class="img-fluid" width="255" height="255" alt=""
-                            data-aos="zoom-out" 
-                            data-aos-delay="50" 
-                            data-aos-once="false"
-                        >
+                    <div class="member" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                        <img src="img/team/nico.jpg" class="img-fluid" width="255" height="255" alt=""
+                            data-aos="zoom-out" data-aos-delay="50" data-aos-once="false">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Niwamanya Nicholus</h4>
@@ -454,16 +512,9 @@
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s"
                     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                    <div class="member"
-                        data-aos="zoom-in" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
-                        <img src="img/team/mike.JPG" class="img-fluid" width="255" height="255" alt=""
-                            data-aos="zoom-in" 
-                            data-aos-delay="50" 
-                            data-aos-once="false"
-                        >
+                    <div class="member" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                        <img src="img/team/mike.jpg" class="img-fluid" width="255" height="255" alt=""
+                            data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Balinda Michael</h4>
@@ -482,16 +533,9 @@
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s"
                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                    <div class="member"
-                        data-aos="zoom-in" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
-                        <img src="img/team/ivan.JPG" class="img-fluid" width="255" height="255" alt=""
-                            data-aos="fade-up-right" 
-                            data-aos-delay="50" 
-                            data-aos-once="false"
-                        >
+                    <div class="member" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                        <img src="img/team/ivan.jpg" class="img-fluid" width="255" height="255" alt=""
+                            data-aos="fade-up-right" data-aos-delay="50" data-aos-once="false">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Tweheyo Ivan</h4>
@@ -509,15 +553,9 @@
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s"
                     style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                    <div class="member"
-                        data-aos="zoom-in" 
-                        data-aos-delay="50" 
-                        data-aos-once="false"
-                    >
-                        <img src="img/team/mose.JPG" class="img-fluid" width="255" height="255" alt=""
-                            data-aos="zoom-out" 
-                            data-aos-delay="50" 
-                            data-aos-once="false">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
+                        <img src="img/team/mose.jpg" class="img-fluid" width="255" height="255" alt=""
+                            data-aos="zoom-out" data-aos-delay="50" data-aos-once="false">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Akatwijuka Moses</h4>
@@ -666,8 +704,8 @@
             <div class="section-header" id="contact" name="contact">
                 <h1 class="text-primary text-center" data-aos="zoom-in" data-aos-delay="50" data-aos-once="false">
                     Contact Us</h2>
-                <p class="text-center" data-aos="fade-right" data-aos-delay="50" data-aos-once="false">No one is
-                    perfect, and criticism is always welcome and expected.</p>
+                    <p class="text-center" data-aos="fade-right" data-aos-delay="50" data-aos-once="false">No one is
+                        perfect, and criticism is always welcome and expected.</p>
             </div>
             <div id="contact" class="row">
                 <div class="col-lg-6" data-aos="flip-left" data-aos-delay="50" data-aos-once="false">
@@ -904,14 +942,14 @@
     </script>
 
     <!-- AOS script -->
-    <script type="text/javascript" src="js/aos.js"></script>
+    <!-- <script type="text/javascript" src="js/aos.js"></script> -->
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <script>
+    <!-- <script>
         $(function () {
             AOS.init();
         });
 
-    </script>
+    </script> -->
 
 </body>
 
