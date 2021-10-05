@@ -32,6 +32,8 @@ p {
 .past-main{
 	margin-left: 0px;
 	margin-right: 0px;
+	width: 100vw;
+	color: #fff;
 	background-color: #FFF;
 	height: 99px;
 	box-shadow: 1px 2px 3px #e7e7e7;
@@ -161,7 +163,7 @@ p {
 .banner {
 	padding: 100px 0;
 	color: #f8f8f8;
-	/* background: url(../img/banner-bg.jpg) no-repeat center center; */
+	background: url(../img/banner-bg.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -410,6 +412,60 @@ background-size: cover;
 	.navbar-toggler:focus{
 		outline: none!important;
 	}
+}
+
+
+/* Products section styling */
+.productsContainer{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	flex-direction: row;
+	height: auto;
+	box-shadow: 2px 1px 11px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px 1px 11px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 1px 11px 0px rgba(0,0,0,0.75);
+}
+
+.product1{
+	flex: 4;
+	/* border-right: 1px solid gray; */
+	padding: 15px;
+}
+
+/* .productImageContainer{
+	width: 100%;
+	height: 200px;
+	padding: 20px;
+	position: relative;
+}
+
+.productImageContainer img{
+	position: absolute;
+	top: 10px;
+} */
+
+.product1Desc{
+	/* border-right: 1px solid gray; */
+}
+
+.product2{
+	flex: 4;
+	padding: 15px;
+}
+
+.product3{
+	flex: 4;
+	padding: 15px;
+}
+
+@media (max-width: 780px) {
+	.productsContainer{
+		flex-direction: column;
+		height: auto;
+		padding: 10px;
+	}	
 }
 
 
